@@ -29,7 +29,7 @@ public class SimpleController {
 
     SimpleService simpleService;
 
-    @PostMapping("/save")
+    @GetMapping("/save")
     @ResponseBody
     @ApiOperation(value = "新增测试数据")
     Object save(@RequestParam String name) {
@@ -40,7 +40,7 @@ public class SimpleController {
         return "success";
     }
 
-    @PostMapping("/all")
+    @GetMapping("/all")
     @ResponseBody
     @ApiOperation(value = "获取所有测试数据")
     ResponseEntity all() {
