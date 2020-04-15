@@ -1,0 +1,23 @@
+#======================================#
+#========== Server settings ===========#
+#======================================#
+server:
+  port: 9201
+  servlet:
+    context-path: /
+  tomcat:
+    uri-encoding: UTF-8
+
+#======================================#
+#========== Spring settings ===========#
+#======================================#
+spring:
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+      client:
+        reactive:
+          endpoints: 127.0.0.1:9200
+          username:
+          password:
