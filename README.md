@@ -23,5 +23,5 @@ Elasticsearch：elasticsearch/bin/（windows:elasticsearch.bat linux:elasticsear
 resources > application.yml > spring.data.elasticsearch.client.reactive.endpoints:127.0.0.1:9200
 
 项目测试：<br/>
-新增数据：http://127.0.0.1/simple/save?name=test<br/>
-查看数据：http://127.0.0.1/simple/all<br/>
+新增数据：http://127.0.0.1:9201/simple/save?name=test<br/>
+查看数据：http://127.0.0.1:9201/simple/all<br/>
